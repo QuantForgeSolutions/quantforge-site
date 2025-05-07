@@ -1,6 +1,6 @@
 import './styles.css'
 
-const siteUnderConstruction = true;
+const siteUnderConstruction = false;
 
 if (siteUnderConstruction) {
     document.body.innerHTML = `
