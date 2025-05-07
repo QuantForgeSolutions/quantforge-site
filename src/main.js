@@ -1,13 +1,20 @@
 import './styles.css'
 
-const siteUnderConstruction = true;
+const siteUnderConstruction = false;
+
+const constructionEl = document.getElementById("under-construction");
+const mainsiteEl = document.getElementById("main-site");
+
+function toggleVis(el, showAs = "flex") {
+  el.classList.remove("hidden", "block", "grid", "flex", "inline-block");
+  el.classList.add(showAs);
+}
 
 if (siteUnderConstruction) {
-    document.body.innerHTML = `
-    <div class="min-h-screen flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900 text-center text-gray-800 dark:text-gray-200">
-      <h1 class="text-6xl mb-8">QuantForge Solutions</h1>
-      <h1 class="text-4xl font-bold mb-4">🚧 Site Under Construction 🚧</h1>
-      <p class="text-lg">We're working hard to launch something awesome. Check back soon!</p>
-    </div>
-  `;
+  toggleVis(constructionEl, "flex");
+  toggleVis(mainsiteEl, "hidden");
+}
+else {
+  toggleVis(constructionEl, "hidden");
+  toggleVis(mainsiteEl, "block");
 }
