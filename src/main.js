@@ -1,6 +1,6 @@
 import './styles.css'
 
-const siteUnderConstruction = false;
+const siteUnderConstruction = true;
 
 const constructionEl = document.getElementById("under-construction");
 const mainsiteEl = document.getElementById("main-site");
