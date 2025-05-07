@@ -1,2 +1,2 @@
 # quantforge-site
-website for QuantForge Solutions
+Website for QuantForge Solutions
