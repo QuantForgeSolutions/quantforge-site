@@ -5,8 +5,8 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  base: '/quantforge-site/',
+  base: './',
   build: {
-    outDir: 'docs',
+    outDir: 'dist',
   },
 })
